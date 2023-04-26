@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rpkasa2.HelloController">
+   <children>
+      <VBox fx:id="vbox" layoutX="-1.0" layoutY="679.0" prefHeight="321.0" prefWidth="1920.0" />
+      <Button fx:id="addbtn" layoutX="1850.0" layoutY="70.0" mnemonicParsing="false" onAction="#onAdd" prefHeight="70.0" prefWidth="70.0" text="Add" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="startbtn" alignment="CENTER" layoutX="862.0" layoutY="465.0" minHeight="70.0" minWidth="250.0" mnemonicParsing="false" onAction="#onStart" text="Start" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Pane fx:id="panetop" layoutX="1.0" layoutY="71.0" prefHeight="608.0" prefWidth="994.0" visible="false">
+         <children>
+            <TextArea fx:id="textarea" editable="false" prefHeight="608.0" prefWidth="994.0">
+               <font>
+                  <Font size="16.0" />
+               </font></TextArea>
+         </children>
+      </Pane>
+      <Button fx:id="clearbtn" layoutX="1850.0" mnemonicParsing="false" onAction="#onClear" prefHeight="70.0" prefWidth="70.0" text="Clear" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Pane fx:id="pane2" layoutX="995.0" layoutY="70.0" prefHeight="608.0" prefWidth="854.0" visible="false">
+         <children>
+            <TextArea fx:id="textarea2" editable="false" prefHeight="608.0" prefWidth="854.0">
+               <font>
+                  <Font size="16.0" />
+               </font></TextArea>
+         </children>
+      </Pane>
+      <Pane fx:id="pane3" prefHeight="70.0" prefWidth="1849.0" visible="false">
+         <children>
+            <TextArea fx:id="textarea3" editable="false" prefHeight="70.0" prefWidth="1849.0">
+               <font>
+                  <Font size="16.0" />
+               </font></TextArea>
+         </children>
+      </Pane>
+      <Button fx:id="donebtn" layoutX="1850.0" layoutY="538.0" mnemonicParsing="false" onAction="#onDone" prefHeight="140.0" prefWidth="70.0" text="Done" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="overviewbtn" layoutX="862.0" layoutY="538.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onOverview" prefHeight="35.0" prefWidth="125.0" text="Overview">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="overviewarea" prefHeight="932.0" prefWidth="1920.0" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+      <Button fx:id="backbtn" layoutX="1772.0" layoutY="932.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBack" prefHeight="70.0" prefWidth="149.0" text="Back" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="menubtn" layoutX="1850.0" layoutY="140.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onMenu" prefHeight="70.0" prefWidth="70.0" text="Menu" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitbtn" layoutX="987.0" layoutY="538.0" mnemonicParsing="false" onAction="#onExit" prefHeight="35.0" prefWidth="125.0" text="Exit">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Text fx:id="title" layoutX="901.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kasa OS">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
